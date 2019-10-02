@@ -38,7 +38,8 @@ public class NumberConversionController implements Initializable {
     private void handleButtonAction(ActionEvent event) {
         double txtFieldValue = Double.parseDouble(txtNumberInput.getText());
         double resultInMiles = ncmodel.getMilesFromKilometers(txtFieldValue);
-        String resultAsString = "" + resultInMiles;
+        String resultAsString =
+                "" + resultInMiles;
         lblResult.setText(resultAsString);
     }
 
