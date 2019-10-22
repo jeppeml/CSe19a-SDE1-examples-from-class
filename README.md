@@ -1,2 +1,2 @@
 # CSe19a-SDE1-examples-from-class
-Ændring
+Ændring, måske fint
