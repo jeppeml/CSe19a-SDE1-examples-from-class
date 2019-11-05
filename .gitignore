@@ -27,3 +27,6 @@ hs_err_pid*
 /CouplingAndInterfaces/nbproject/private/
 /CouplingAndInterfaces/dist/
 /CouplingAndInterfaces/build/
+/3LayerMVC/nbproject/private/
+/3LayerMVC/build/
+/3LayerMVC/dist/
