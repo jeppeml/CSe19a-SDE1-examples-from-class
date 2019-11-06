@@ -32,20 +32,19 @@ public class AppController implements Initializable {
     @FXML
     private ListView<Inmate> inmateList;
     
-    private BLLManager bll = new BLLManager();
+    private AppModel model = new AppModel();
     
     @FXML
     private void handleButtonAction(ActionEvent event) {
         System.out.println("You clicked me!");
         label.setText("Hello World!");
-        inmateList.setItems(
-            FXCollections.observableArrayList(bll.getAllInmates()));
+        model.fetchData();
         
     }
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
+        inmateList.setItems(model.getInmateList());
     }    
     
 }
