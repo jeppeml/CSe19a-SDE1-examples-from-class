@@ -7,6 +7,8 @@ package pkg3layermvc.bll;
 
 import java.util.List;
 import pkg3layermvc.be.Inmate;
+import pkg3layermvc.dal.DalFacade;
+import pkg3layermvc.dal.InmateDAO;
 import pkg3layermvc.dal.MockManager;
 
 /**
@@ -14,9 +16,9 @@ import pkg3layermvc.dal.MockManager;
  * @author jeppjleemoritzled
  */
 public class BLLManager {
-    private MockManager mock = new MockManager();
+    private DalFacade dal = new InmateDAO();
     
     public List<Inmate> getAllInmates(){
-        return mock.getAllInmates();
+        return dal.getAllInmates();
     }
 }

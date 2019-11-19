@@ -13,7 +13,7 @@ import pkg3layermvc.be.Inmate;
  *
  * @author jeppjleemoritzled
  */
-public class MockManager {
+public class MockManager implements DalFacade{
     public List<Inmate> getAllInmates(){
         Inmate im1 = new Inmate(1, 256, "Piotr Steganovski");
         Inmate im2 = new Inmate(2, 256, "Pierre Stegeau");
@@ -28,5 +28,10 @@ public class MockManager {
         inmates.add(im4);
         
         return inmates;
+    }
+
+    @Override
+    public boolean deleteInmate(int fangenummer) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }
