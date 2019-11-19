@@ -18,7 +18,7 @@ import java.util.logging.Logger;
  *
  * @author jeppjleemoritzled
  */
-public class InmateDAO {
+public class InmateDAO implements DalFacade{
     public List<Inmate> getAllInmates(){
         SQLServerDataSource ds = new SQLServerDataSource();
         ds.setUser("CSe19B_40");
@@ -48,5 +48,10 @@ public class InmateDAO {
             Logger.getLogger(InmateDAO.class.getName()).log(Level.SEVERE, null, ex);
         }
         return null;
+    }
+
+    @Override
+    public boolean deleteInmate(int fangenummer) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }
