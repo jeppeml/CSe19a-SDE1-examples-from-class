@@ -30,6 +30,7 @@ public class AppController implements Initializable {
         System.out.println("You clicked me!");
         
         Conference c2020 = bll.getConference(2020);
+        
         label.setText(c2020.getName());
         
     }
