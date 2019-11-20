@@ -14,5 +14,8 @@ import pkg3layermvc.be.Inmate;
  */
 public interface DalFacade {
     public List<Inmate> getAllInmates();
-    public boolean deleteInmate(int fangenummer);
+    public boolean deleteInmate(Inmate inmate);
+    public Inmate createInmate(Inmate inmate);
+    public boolean updateInmate(Inmate inmate);
+    
 }
